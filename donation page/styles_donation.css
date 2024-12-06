@@ -1,0 +1,388 @@
+body { 
+    background-image: url("image_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+
+/* Style for the logo image */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the logo image and text */
+}
+
+.logo-image {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    object-fit: contain; /* Ensures the logo doesn't distort */
+}
+
+.container2 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+/* Header */
+header {
+    background: #191818;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+header .logo span {
+    color: #f04;
+}
+
+header nav ul {
+    font-size: 18px;
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background:#f04;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* General header container styling */
+header .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Navigation styling */
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+/* Hide navigation items on smaller screens */
+@media (max-width: 1000px) {
+    header nav ul {
+        display: none;
+    }
+}
+
+/* Social icons and menu container */
+.icons-and-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between social icons and menu */
+}
+
+/* Hamburger menu */
+.manu {
+    font-size: 2.5em;
+    display: none; /* Hidden on larger screens */
+}
+
+@media (max-width: 1000px) {
+    .manu {
+        display: block; /* Visible on smaller screens */
+    }
+}
+
+/* Change icon color to white */
+.icons-and-menu a {
+    color: white; /* Set icon color to white */
+    font-size: 1.6em; /* Adjust size as needed */
+    text-decoration: none; /* Remove underline if present */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+.icons-and-menu a:hover {
+    color: rgb(255, 0, 0); /* Change color on hover (e.g., red) */
+}
+
+.manu i {
+    color: white; /* Also make the hamburger menu icon white */
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 1.6em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Display the dropdown content when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .dropdown-content {
+        position: static;
+        background-color: #333;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Updated container class to include the fadeIn animation */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: url("dbf0f3.png");
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
+    border-radius: 15px;
+
+    /* Add animation */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Remaining CSS remains unchanged */
+
+/* Keyframes already added above. Existing styles continue below: */
+
+h2, h3 {
+    text-align: center;
+    color: #333;  
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+input {
+    font-size: 1.1rem;
+    padding: 7px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+}
+button {
+    font-size: 1.1rem;
+    padding: 7px;
+    border: 1.4px solid #000000;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000000;
+}
+
+input[type="text"]:focus {
+    border-color: rgb(0, 0, 0); /* Highlighted border on focus */
+    outline: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Subtle glowing effect */
+    flex: 2;
+}
+
+input[type="number"]:focus {
+    border-color: rgb(0, 0, 0); /* Highlighted border on focus */
+    outline: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Subtle glowing effect */
+    flex: 1;
+}
+
+button {
+    background-color: rgb(255, 24, 24);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    
+    transform: translateY(-3px); /* Slight pop-up effect */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Shadow for hover */
+}
+
+.warning {
+    color: red;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.add-more {
+    text-align: right;
+    margin-top: -5px;
+}
+
+.add-more button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    background-color: rgb(255, 24, 24);
+    color: #fff;
+}
+
+.donate-money {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.donate-money a {
+    color: #fff;
+    background-color: #e82d2d;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 51px;
+    border: 3.7px solid #a70505c6;
+    transition: background-color 0.3s ease;
+}
+
+.donate-money a:hover {
+    background-color: #c70000;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        background-image: url(image_22.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        background: rgba(255, 255, 255, 0.5);
+        max-width: 80%;
+        padding: 15px;
+        margin: 40px auto;
+    }
+
+    h2, h3 {
+        font-size: 1rem;
+        color: #000;
+    }
+
+    label {
+        font-size: 1rem;
+        color: #000;
+    }
+
+    input {
+        background-color: #fff;
+        font-size: 1rem;
+        color: #000;
+    }
+
+    button, .add-more button {
+        background-color: rgb(255, 24, 24);
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    button:hover {
+        background-color: #d20404;
+    }
+}
+
+
+

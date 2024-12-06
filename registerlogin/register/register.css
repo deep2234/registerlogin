@@ -1,0 +1,332 @@
+/* General styles */
+body {
+    background-image: url("istockphoto-1281073432-2048x2048.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+/* Style for the logo image */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the logo image and text */
+}
+
+.logo-image {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    object-fit: contain; /* Ensures the logo doesn't distort */
+}
+
+.container23 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Full-screen background video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Keeps video behind the content */
+}
+
+.back-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the entire screen */
+}
+
+
+
+/* Header */
+header {
+    background: #191818;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+header .logo span {
+    color: #f04;
+}
+
+header nav ul {
+    font-size: 18px;
+    list-style: none;
+    float: right;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background:#f04;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* General header container styling */
+header .container23 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Navigation styling */
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+/* Hide navigation items on smaller screens */
+@media (max-width: 1000px) {
+    header nav ul {
+        display: none;
+    }
+}
+
+/* Social icons and menu container */
+.icons-and-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between social icons and menu */
+}
+
+/* Hamburger menu */
+.manu {
+    font-size: 2.5em;
+    display: none; /* Hidden on larger screens */
+}
+
+@media (max-width: 1000px) {
+    .manu {
+        display: block; /* Visible on smaller screens */
+    }
+}
+
+/* Change icon color to white */
+.icons-and-menu a {
+    color: white; /* Set icon color to white */
+    font-size: 1.6em; /* Adjust size as needed */
+    text-decoration: none; /* Remove underline if present */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect */
+.icons-and-menu a:hover {
+    color: rgb(255, 0, 0); /* Change color on hover (e.g., red) */
+}
+
+.manu i {
+    color: white; /* Also make the hamburger menu icon white */
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 1.6em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Display the dropdown content when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .dropdown-content {
+        position: static;
+        background-color: #333;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    
+    padding: 20px;
+}
+
+.container {
+    background-image: url("dbf0f3.png");
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgb(0, 0, 0);
+    padding: 40px; /* Increased padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px; /* Increased width */
+    min-height: 550px; /* Ensures the form has sufficient height */
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+.container h1 {
+    color: #333; /* Darker text for contrast */
+    margin-bottom: 25px;
+    font-size: 2rem; /* Larger, bolder title */
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%; /* Reduced width for padding around inputs */
+    margin-bottom: 20px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    font-size: 1rem; /* Increased font size */
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: rgb(0, 0, 0); /* Highlighted border on focus */
+    outline: none;
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Subtle glowing effect */
+}
+
+button[type="submit"] {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    background: linear-gradient(135deg, #f04, #d90429); /* Gradient button */
+    color: white;
+    cursor: pointer;
+    width: 90%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px); /* Slight pop-up effect */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Shadow for hover */
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: none; /* Flattened effect on click */
+}
+
+.container h3 {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+.container h3 a {
+    color: #f04;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.container h3 a:hover {
+    color: #d90429; /* Darker shade for hover */
+}
+
+/* Animation for smooth fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon_19.png">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container234">
+            <div class="logo">
+                <img src="favicon_19.png" alt="KindDONOR Logo" class="logo-image">
+                <h1>Kind<span>DONOR</span></h1>
+            </div>
+
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="/Our Causes/causes.html">Our Causes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/donation page/index_donation.html" class="donate-btn">Donate</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-bars"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#logic">Login</a>
+                            <a href="#Register">Register</a>                                            
+                        </div>
+                    </li>
+                </ul>
+                <div class="icons-and-menu">
+                    <a href="https://www.facebook.com/profile.php?id=61569570429451&sk=about"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/Kinddonor174779"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/kind.donor/"><i class="fab fa-instagram"></i></a>
+                    <label for="chk1" class="manu">
+                        <i class="fa fa-bars"></i>
+                    </label>
+                    <input type="checkbox" id="chk1" style="display: none;">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <h1><u>Login Form</u></h2>
+            <form action="login1.php" method="post">
+                <input type="text" id="username" name="username" required placeholder="Enter username" />
+
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+            <h3>Not registerd yet? <a href="/registerlogin/register/register.html">Register here</a> </h2>
+        </div>
+    </main>
+</body>
+
+</html>
