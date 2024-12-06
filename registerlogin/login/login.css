@@ -1,5 +1,9 @@
 /* General styles */
 body {
+    background-image: url("Untitled Project (8).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
