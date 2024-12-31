@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #dbf0f3;
 }
 /* Style for the logo image */
 .logo {
@@ -265,6 +265,59 @@ header nav ul {
     color: #666;
     font-size: 1rem;
 }
+
+
+
+
+
+
+
+
+
+/* Gallery Styling */
+.gallery {
+    padding: 70px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    background: #dbf0f3;
+    border: 1px solid #00000067;
+    border-radius: 10px;
+    padding: 9px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.443);
+    width: 500px;
+    text-align: center;
+}
+/* .gallery-container:hover{
+    transform:translateY(55px)
+} */
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-item video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
 
 
 
