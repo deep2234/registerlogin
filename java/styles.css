@@ -1,7 +1,10 @@
 /* General styles */
-body {
-    margin: 0;
+body { 
+    
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
     line-height: 1.6;
 }
 
@@ -127,18 +130,19 @@ header nav ul {
     align-items: center;
     gap: 15px; /* Space between social icons and menu */
 }
-
-/* Hamburger menu */
-.manu {
-    font-size: 2.5em;
-    display: none; /* Hidden on larger screens */
-}
-
-@media (max-width: 1000px) {
-    .manu {
-        display: block; /* Visible on smaller screens */
+@media(max-width: 1000px){
+    .icons-and-menu{
+        position: absolute; /* Or fixed, depending on the design */
+        bottom: 25px; /* Move to the bottom of the screen */
+        left: 73%; /* Center horizontally */
+        transform: translateX(-50%); /* Center align with transform */
+        display: flex;
+        justify-content: center; /* Align icons in the center */
+        gap: 20px; /* Adjust spacing for better visibility */
     }
 }
+
+
 
 /* Change icon color to white */
 .icons-and-menu a {
@@ -153,9 +157,7 @@ header nav ul {
     color: rgb(255, 0, 0); /* Change color on hover (e.g., red) */
 }
 
-.manu i {
-    color: white; /* Also make the hamburger menu icon white */
-}
+
 
 /* Dropdown styling */
 .dropdown {
@@ -165,7 +167,7 @@ header nav ul {
 
 .dropdown .dropbtn {
     background-color: transparent;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.6em;
     border: none;
     cursor: pointer;
@@ -206,6 +208,69 @@ header nav ul {
         background-color: #333;
     }
 }
+
+/* Mobile-specific styles */
+.hamburger-menu {
+    display: none; /* Default hidden */
+}
+
+/* Show and position it for mobile screens */
+@media (max-width: 1000px) {
+    .hamburger-menu {
+        display: block;
+        position: absolute; /* Change to 'fixed' if you want it to stay on scroll */
+        top: 25px; /* Adjust vertical position */
+        right: 20px; /* Adjust horizontal position */
+        z-index: 1000; /* Ensure it's above other elements */
+        font-size: 2.5rem; /* Adjust the size of the icon */
+        color: #fff; /* Color of the icon */
+        cursor: pointer;
+    }
+}
+
+.mobile-dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #191919;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    text-align: center;
+}
+
+.mobile-dropdown-menu li {
+    border-bottom: 1px solid #ed0808;
+}
+
+.mobile-dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.mobile-dropdown-menu li a:hover {
+    background-color: #f4004d;
+}
+
+.mobile-dropdown-menu.open {
+    display: block;
+}
+
+/* Show hamburger menu on smaller screens */
+@media (max-width: 1000px) {
+    .hamburger-menu {
+        display: block;
+    }
+    .desktop-menu {
+        display: none;
+    }
+}
+
 
 
 
@@ -341,13 +406,15 @@ header nav ul {
     font-size: 21px;
 }
 
+
+
 /* About Section */
-.about, .causes, .contact {
+.causes{
     padding: 50px 20px;
     text-align: center;
 }
 
-.about h2, .causes h2, .contact h2 {
+.causes h2 {
     margin-bottom: 30px;
 }
 
@@ -378,10 +445,72 @@ header nav ul {
     font-size: 17px;
 }
 
+
+/* Gallery Styling */
+.gallery {
+    padding: 70px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    background: #dbf0f3;
+    border: 1px solid #00000067;
+    border-radius: 10px;
+    padding: 9px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.443);
+    width: 500px;
+    text-align: center;
+}
+/* .gallery-container:hover{
+    transform:translateY(55px)
+} */
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-item video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
 /* Contact Section */
+
+ .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+}
+
 .contact form {
     max-width: 600px;
-    margin: 0 auto;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
