@@ -1,5 +1,9 @@
 /* General Styling */
 body {
+    /* background-image: url("/Aasset/images/wallpapers/backiee-266986.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -270,22 +274,28 @@ header nav ul {
 }
 
 
+
+
 /* Introduction Section */
 .causes-intro {
+    /* background-image: url("/Aasset/images/wallpapers/cloud.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
     text-align: center;
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .causes-intro h1 {
-    color: #333;
+    color: #000000;
     margin-bottom: 10px;
 }
 
 .causes-intro p {
-    color: #666;
+    color: #000000;
     font-size: 1.2rem;
 }
 
@@ -338,6 +348,7 @@ header nav ul {
 
 /* Gallery Styling */
 .gallery {
+    /* background-color: #dbf0f3; */
     padding: 70px 20px;
     background-color: #ffffff;
     text-align: center;
@@ -425,7 +436,7 @@ header nav ul {
 /* Footer */
 footer {
     text-align: center;
-    background-color: #333;
+    background-color: #000000;
     color: white;
     padding: 10px 0;
     margin-top: 20px;

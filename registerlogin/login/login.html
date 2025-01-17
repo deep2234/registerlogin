@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon_19.png">
+    <link rel="icon" type="image/png" href="/Aasset/images/favicon/favicon_1.png">
     <title>Login Page</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
 </head>
 
 <body>
@@ -16,13 +17,13 @@
     <header>
         <div class="container234">
             <div class="logo">
-                <img src="favicon_19.png" alt="KindDONOR Logo" class="logo-image">
+                <img src="/Aasset/images/favicon/favicon_1.png" alt="KindDONOR Logo" class="logo-image">
                 <h1>Kind<span>DONOR</span></h1>
             </div>
             <nav>
                 <ul class="desktop-menu">
-                    <li><a href="/java/codee.html">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="/home_page/codee.html">Home</a></li>
+                    <li><a href="/about us/aboutus.html">About Us</a></li>
                     <li><a href="/Our Causes/causes.html">Our Causes</a></li>
                     <li><a href="/contact/index.html">Contact</a></li>
                     <li><a href="/donation page/index_donation.html" class="donate-btn">Donate</a></li>
@@ -45,8 +46,8 @@
                     <i class="fa fa-bars"></i>
                 </div>
                 <ul class="mobile-dropdown-menu">
-                    <li><a href="/java/codee.html">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="/home_page/codee.html">Home</a></li>
+                    <li><a href="/about us/aboutus.html">About Us</a></li>
                     <li><a href="/Our Causes/causes.html">Our Causes</a></li>
                     <li><a href="/contact/index.html">Contact</a></li>
                     <li><a href="/donation page/index_donation.html" class="donate-btn">Donate</a></li>
@@ -74,9 +75,10 @@
         <div class="container">
             <h1><u>Login Form</u></h2>
             <form action="login1.php" method="post">
-                <input type="text" id="username" name="username" required placeholder="Enter username" />
+                <input type="email" id="username" name="username" required placeholder="Enter username" />
 
                 <input type="password" id="password" name="password" placeholder="Enter password" required>
+                <i class="fa-solid fa-eye" id="show-password"></i>
 
                 <button type="submit">
                     Submit
@@ -85,6 +87,36 @@
             <h3>Not registerd yet? <a href="/registerlogin/register/register.html">Register here</a> </h2>
         </div>
     </main>
+
+    <script>
+        const showPassword = document.querySelector("#show-password");
+        const passwordField = document.querySelector("#password");
+
+        showPassword.addEventListener("click", function () {
+            // Toggle password visibility
+            const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+            passwordField.setAttribute("type", type);
+
+            // Toggle eye icon class
+            if (type === "text") {
+                this.classList.remove("fa-eye");
+                this.classList.add("fa-eye-slash");
+            } else {
+                this.classList.remove("fa-eye-slash");
+                this.classList.add("fa-eye");
+            }
+        });
+
+    </script>
+    
+
+   
+        
+    
+    
+
+
+
 </body>
 
 </html>

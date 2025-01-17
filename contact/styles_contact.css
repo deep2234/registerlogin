@@ -1,11 +1,11 @@
 /* General styles */
 
 body { 
-    /* background-image: url("image_12.jpg");
+    background-image: url("/Aasset/images/wallpapers/backiee-266986.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
-    background: linear-gradient(111deg, #00bbff, #fb0404);
+    background-size: cover;
+    /* background: linear-gradient(111deg, #00bbff, #fb0404); */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;

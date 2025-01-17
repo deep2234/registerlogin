@@ -1,6 +1,6 @@
 /* General styles */
 body {
-    background-image: url("Untitled Project (8).jpg");
+    background-image: url("/Aasset/images/logic_register/Untitled\ Project\ \(8\).jpg ");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -314,7 +314,7 @@ main {
 
 /* Login container styling */
 .container {
-    background-image: url("dbf0f3.png");
+    background-image: url("/Aasset/images/logic_register/dbf0f3.png");
     border-radius: 15px;
     box-shadow: 0 10px 30px rgb(0, 0, 0);
     padding: 40px; /* Increased padding */
@@ -331,16 +331,23 @@ main {
 .container h1 {
     color: #333; /* Darker text for contrast */
     margin-bottom: 25px;
+    
     font-size: 2rem; /* Larger, bolder title */
     text-align: center;
+    align-items: center;
 }
 
 /* Input fields styling */
-input[type="text"],
+
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
     width: 90%; /* Reduced width for padding around inputs */
     margin-bottom: 20px;
+
+    position: relative;
+
+    margin-left:22px ;
     padding: 12px;
     box-sizing: border-box;
     border: 2px solid #000000;
@@ -349,7 +356,28 @@ input[type="password"] {
     transition: all 0.3s ease;
 }
 
-input[type="text"]:focus,
+#show-password{
+    position: absolute;
+    top: 58%;
+    right: 39%;
+    cursor: pointer;
+    color: rgb(20, 20, 20);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 input[type="email"]:focus,
 input[type="password"]:focus {
     border-color: rgb(0, 0, 0); /* Highlighted border on focus */
@@ -365,6 +393,7 @@ button[type="submit"] {
     background: linear-gradient(135deg, #f04, #d90429); /* Gradient button */
     color: white;
     cursor: pointer;
+    margin-left:22px ;
     width: 90%;
     font-size: 1.1rem;
     font-weight: bold;

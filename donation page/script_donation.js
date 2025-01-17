@@ -33,8 +33,8 @@ donationForm.addEventListener('submit', (e) => {
     for (let i = 0; i < donationTypes.length; i++) {
         if (donationTypes[i].value.trim() === '' || donationCounts[i].value.trim() === '') {
             valid = false;
-            alert('Please fill out all fields in the donation section!');
-            break;
+            // alert('Please fill out all fields in the donation section!');
+            // break;
         }
     }
 
@@ -51,66 +51,5 @@ donationForm.addEventListener('submit', (e) => {
                 <input type="number" name="donationCount" placeholder="Number of Items" min="1">
             </div>
         `;
-    }
-});
-
-// Address form validation
-const addressForm = document.getElementById('address-form');
-addressForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const street = document.getElementById('street').value.trim();
-    const city = document.getElementById('city').value.trim();
-    const state = document.getElementById('state').value.trim();
-    const pincode = document.getElementById('pincode').value.trim();
-    const landmark = document.getElementById('landmark').value.trim();
-    const Phone_Number = document.getElementById('Phone_Number').value.trim();
-
-    let valid = true;
-
-    if (!street) {
-        document.getElementById('street-warning').style.display = 'inline';
-        valid = false;
-    } else {
-        document.getElementById('street-warning').style.display = 'none';
-    }
-
-    if (!city) {
-        document.getElementById('city-warning').style.display = 'inline';
-        valid = false;
-    } else {
-        document.getElementById('city-warning').style.display = 'none';
-    }
-
-    if (!state) {
-        document.getElementById('state-warning').style.display = 'inline';
-        valid = false;
-    } else {
-        document.getElementById('state-warning').style.display = 'none';
-    }
-
-    if (!pincode) {
-        document.getElementById('pincode-warning').style.display = 'inline';
-        valid = false;
-    } else {
-        document.getElementById('pincode-warning').style.display = 'none';
-    }
-
-    if (!landmark) {
-        document.getElementById('landmark-warning').style.display = 'inline';
-        valid = false;
-    } else {
-        document.getElementById('landmark-warning').style.display = 'none';
-    }
-    if (!Phone_Number) {
-        document.getElementById('Phone_Number-warning').style.display = 'inline';
-        valid = false;
-    } else {
-        document.getElementById('Phone_Number-warning').style.display = 'none';
-    }
-
-    if (valid) {
-        alert('Address submitted successfully!');
-        addressForm.reset();
     }
 });

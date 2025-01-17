@@ -1,5 +1,5 @@
 body { 
-    background-image: url("image_1.jpg");
+    background-image: url("/Aasset/images/donation/image_1.jpg ");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -292,7 +292,7 @@ header nav ul {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-image: url("dbf0f3.png");
+    background-image: url("/Aasset/images/donation/dbf0f3.png ");
     box-shadow: 0 5px 20px rgb(0, 0, 0);
     border-radius: 15px;
 
@@ -365,6 +365,10 @@ button:hover {
     transform: translateY(-3px); /* Slight pop-up effect */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Shadow for hover */
 }
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: none; /* Flattened effect on click */
+}
 
 .warning {
     color: red;
@@ -402,6 +406,7 @@ button:hover {
 .donate-money a:hover {
     background-color: #c70000;
 }
+
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {

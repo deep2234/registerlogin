@@ -1,6 +1,6 @@
 /* General styles */
 body {
-    background-image: url("Untitled Project (8).jpg");
+    background-image: url("/Aasset/images/logic_register/Untitled\ Project\ \(8\).jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -306,7 +306,7 @@ main {
 }
 
 .container {
-    background-image: url("dbf0f3.png");
+    background-image: url("/Aasset/images/logic_register/dbf0f3.png");
     border-radius: 20px;
     box-shadow: 0 10px 30px rgb(0, 0, 0);
     padding: 40px; /* Increased padding */
@@ -331,6 +331,7 @@ input[type="email"],
 input[type="password"] {
     width: 90%; /* Reduced width for padding around inputs */
     margin-bottom: 20px;
+    margin-left: 22px ;
     padding: 12px;
     box-sizing: border-box;
     border: 2px solid #000000;
@@ -354,6 +355,7 @@ button[type="submit"] {
     background: linear-gradient(135deg, #f04, #d90429); /* Gradient button */
     color: white;
     cursor: pointer;
+    margin-left: 22px ;
     width: 90%;
     font-size: 1.1rem;
     font-weight: bold;
