@@ -423,7 +423,7 @@ header nav ul {
     margin-bottom: 10px;
 }
 .cause:hover {
-    box-shadow: 2px 2px 8px 2px #ee0404;
+    box-shadow: 0 0 25px rgb(0, 0, 0);
     transition: font-size 0.5s;
     font-size: 17px;
 }

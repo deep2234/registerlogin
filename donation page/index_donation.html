@@ -22,13 +22,13 @@
                     <li><a href="/Our Causes/causes.html">Our Causes</a></li>
                     <li><a href="/contact/index.html">Contact</a></li>
                     <li><a href="/donation page/index_donation.html" class="donate-btn">Donate</a></li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn"><i class="fa fa-bars"></i></a>
                         <div class="dropdown-content">
                             <a href="/registerlogin/login/login.html">Login</a>
                             <a href="/registerlogin/register/register.html">Register</a>                                            
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
                 <div class="icons-and-menu">
                     <a href="https://www.facebook.com/profile.php?id=61569570429451&sk=about"><i class="fab fa-facebook"></i></a>
@@ -46,8 +46,8 @@
                     <li><a href="/Our Causes/causes.html">Our Causes</a></li>
                     <li><a href="/contact/index.html">Contact</a></li>
                     <li><a href="/donation page/index_donation.html" class="donate-btn">Donate</a></li>
-                    <li><a href="/registerlogin/login/login.html">Login</a></li>
-                    <li><a href="/registerlogin/register/register.html">Register</a></li>
+                    <!-- <li><a href="/registerlogin/login/login.html">Login</a></li>
+                    <li><a href="/registerlogin/register/register.html">Register</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -65,7 +65,45 @@
         });
     </script>
     
+
     <div class="container">
+        <!-- Address Section -->
+        <h3><u>DONATION DETAILS</u></h3>
+        <form id="address-form">
+            <label for="street">Street<span style="color: #f04; font-weight: bold;">*</span></label>
+            <input type="text" id="street" name="street" placeholder="e.g., K.C. Road"required>
+            <span class="warning" id="street-warning">Street cannot be empty!</span>
+
+            <label for="city">City<span style="color: #f04; font-weight: bold;">*</span></label>
+            <input type="text" id="city" name="city" placeholder="e.g., Guwahati"required>
+            <span class="warning" id="city-warning">City cannot be empty!</span>
+
+            <label for="state">State<span style="color: #f04; font-weight: bold;">*</span></label>
+            <input type="text" id="state" name="state" placeholder="e.g., Meghalaya"required>
+            <span class="warning" id="state-warning">State cannot be empty!</span>
+
+            <label for="pincode">Pincode<span style="color: #f04; font-weight: bold;">*</span></label>
+            <input type="number" id="pincode" name="pincode" placeholder="e.g., 793001"required>
+            <span class="warning" id="pincode-warning">Pincode cannot be empty!</span>
+
+            <label for="landmark">Landmark<span style="color: #f04; font-weight: bold;">*</span></label>
+            <input type="text" id="landmark" name="landmark" placeholder="e.g., Near City Center"required>
+            <span class="warning" id="landmark-warning">Landmark cannot be empty!</span>
+
+            <label for="Phone_Number">Phone Number<span style="color: #f04; font-weight: bold;">*</span></label>
+            <input type="number" id="Phone_Number" name="Phone_Number" placeholder="e.g., 9362230534"required>
+            <span class="warning" id="Phone_Number-warning">Phone Number cannot be empty!</span>
+            
+            <button type="save">Save</button>
+        </form>
+
+        <br>
+        <br>
+        <hr color="black">
+        <br>
+    
+
+    <!-- <div class="container"> -->
         <!-- Donation Section -->
         <h2><u>Donate Items</u></h2>
         <form id="donation-form">
@@ -89,38 +127,6 @@
         <div class="donate-money">
             <a href="donate-money.html">Donate Money</a>
         </div>
-    </div>
-
-    <div class="container">
-        <!-- Address Section -->
-        <h3><u>Enter Your Address</u></h3>
-        <form id="address-form">
-            <label for="street">Street</label>
-            <input type="text" id="street" name="street" placeholder="e.g., K.C. Road"required>
-            <span class="warning" id="street-warning">Street cannot be empty!</span>
-
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" placeholder="e.g., Guwahati"required>
-            <span class="warning" id="city-warning">City cannot be empty!</span>
-
-            <label for="state">State</label>
-            <input type="text" id="state" name="state" placeholder="e.g., Meghalaya"required>
-            <span class="warning" id="state-warning">State cannot be empty!</span>
-
-            <label for="pincode">Pincode</label>
-            <input type="number" id="pincode" name="pincode" placeholder="e.g., 793001"required>
-            <span class="warning" id="pincode-warning">Pincode cannot be empty!</span>
-
-            <label for="landmark">Landmark</label>
-            <input type="text" id="landmark" name="landmark" placeholder="e.g., Near City Center"required>
-            <span class="warning" id="landmark-warning">Landmark cannot be empty!</span>
-
-            <label for="Phone_Number">Phone Number</label>
-            <input type="number" id="Phone_Number" name="Phone_Number" placeholder="e.g., 9362230534"required>
-            <span class="warning" id="Phone_Number-warning">Phone Number cannot be empty!</span>
-            
-            <button type="submit">Submit Address</button>
-        </form>
     </div>
 
     <script src="script_donation.js"></script>
