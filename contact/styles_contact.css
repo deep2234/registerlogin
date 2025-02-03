@@ -366,4 +366,13 @@ header nav ul {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Shadow for hover */
 }
 
+/* Footer */
+footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
 

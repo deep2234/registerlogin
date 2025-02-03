@@ -10,17 +10,21 @@ body {
     background-color: #dbf0f3;
     line-height: 1.6;
 }
+
 /* Style for the logo image */
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between the logo image and text */
+    gap: 10px;
+    /* Space between the logo image and text */
 }
 
 .logo-image {
-    width: 40px; /* Adjust the size as needed */
+    width: 40px;
+    /* Adjust the size as needed */
     height: 40px;
-    object-fit: contain; /* Ensures the logo doesn't distort */
+    object-fit: contain;
+    /* Ensures the logo doesn't distort */
 }
 
 .container {
@@ -36,13 +40,15 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Keeps video behind the content */
+    z-index: -1;
+    /* Keeps video behind the content */
 }
 
 .back-video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures video covers the entire screen */
+    object-fit: cover;
+    /* Ensures video covers the entire screen */
 }
 
 
@@ -90,7 +96,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background:#f04;
+    background: #f04;
     border-radius: 5px;
 }
 
@@ -130,17 +136,25 @@ header nav ul {
 .icons-and-menu {
     display: flex;
     align-items: center;
-    gap: 15px; /* Space between social icons and menu */
+    gap: 15px;
+    /* Space between social icons and menu */
 }
-@media(max-width: 1000px){
-    .icons-and-menu{
-        position: absolute; /* Or fixed, depending on the design */
-        bottom: 25px; /* Move to the bottom of the screen */
-        left: 73%; /* Center horizontally */
-        transform: translateX(-50%); /* Center align with transform */
+
+@media(max-width: 1000px) {
+    .icons-and-menu {
+        position: absolute;
+        /* Or fixed, depending on the design */
+        bottom: 25px;
+        /* Move to the bottom of the screen */
+        left: 73%;
+        /* Center horizontally */
+        transform: translateX(-50%);
+        /* Center align with transform */
         display: flex;
-        justify-content: center; /* Align icons in the center */
-        gap: 20px; /* Adjust spacing for better visibility */
+        justify-content: center;
+        /* Align icons in the center */
+        gap: 20px;
+        /* Adjust spacing for better visibility */
     }
 }
 
@@ -148,15 +162,20 @@ header nav ul {
 
 /* Change icon color to white */
 .icons-and-menu a {
-    color: white; /* Set icon color to white */
-    font-size: 1.6em; /* Adjust size as needed */
-    text-decoration: none; /* Remove underline if present */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    color: white;
+    /* Set icon color to white */
+    font-size: 1.6em;
+    /* Adjust size as needed */
+    text-decoration: none;
+    /* Remove underline if present */
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
 }
 
 /* Hover Effect */
 .icons-and-menu a:hover {
-    color: rgb(255, 0, 0); /* Change color on hover (e.g., red) */
+    color: rgb(255, 0, 0);
+    /* Change color on hover (e.g., red) */
 }
 
 
@@ -213,19 +232,26 @@ header nav ul {
 
 /* Mobile-specific styles */
 .hamburger-menu {
-    display: none; /* Default hidden */
+    display: none;
+    /* Default hidden */
 }
 
 /* Show and position it for mobile screens */
 @media (max-width: 1000px) {
     .hamburger-menu {
         display: block;
-        position: absolute; /* Change to 'fixed' if you want it to stay on scroll */
-        top: 25px; /* Adjust vertical position */
-        right: 20px; /* Adjust horizontal position */
-        z-index: 1000; /* Ensure it's above other elements */
-        font-size: 2.5rem; /* Adjust the size of the icon */
-        color: #fff; /* Color of the icon */
+        position: absolute;
+        /* Change to 'fixed' if you want it to stay on scroll */
+        top: 25px;
+        /* Adjust vertical position */
+        right: 20px;
+        /* Adjust horizontal position */
+        z-index: 1000;
+        /* Ensure it's above other elements */
+        font-size: 2.5rem;
+        /* Adjust the size of the icon */
+        color: #fff;
+        /* Color of the icon */
         cursor: pointer;
     }
 }
@@ -268,6 +294,7 @@ header nav ul {
     .hamburger-menu {
         display: block;
     }
+
     .desktop-menu {
         display: none;
     }
@@ -315,11 +342,13 @@ header nav ul {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     width: 250px;
-    transition: transform 0.3s ease;
+    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .cause:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px); /* Slight pop-up effect */
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.736); /* Shadow for hover */
 }
 
 .cause i {
@@ -348,7 +377,6 @@ header nav ul {
 
 /* Gallery Styling */
 .gallery {
-    /* background-color: #dbf0f3; */
     padding: 70px 20px;
     background-color: #ffffff;
     text-align: center;
@@ -368,7 +396,7 @@ header nav ul {
 }
 
 .gallery-item {
-    background: #dbf0f3;
+    background: #333;
     border: 1px solid #00000067;
     border-radius: 10px;
     padding: 9px;
@@ -376,6 +404,7 @@ header nav ul {
     width: 500px;
     text-align: center;
 }
+
 /* .gallery-container:hover{
     transform:translateY(55px)
 } */
@@ -385,9 +414,29 @@ header nav ul {
     border-radius: 10px;
 }
 
-.gallery-item video {
+.gallery-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    border-radius: 10px;
+    max-width: 750px; /* Adjust based on your design */
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintains the 16:9 aspect ratio */
+    margin: 0 auto; /* Centers the container horizontally */
+    background: #333; /* Background color for the container */
+    border: 1px solid rgba(255, 0, 68, 0.59); /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 9px; /* Inner spacing */
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.769); /* Shadow effect */
+    margin-bottom: 200px; /* Space below the container */
+}
+
+/* Ensure the video inside the container is responsive */
+.gallery-video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Slightly rounded corners for the video */
+    object-fit: cover; /* Ensures the video covers the container without distortion */
 }
 
 
@@ -395,12 +444,12 @@ header nav ul {
 
 
 /* Causes Section */
-.causes {
+.cause {
     padding: 50px 20px;
     text-align: center;
 }
 
- .causes h2 {
+.causes h2 {
     margin-bottom: 30px;
 }
 
@@ -419,9 +468,16 @@ header nav ul {
     box-shadow: 0 4px 7px rgb(0, 0, 0);
 }
 
-.causes .cause h3 {
-    margin-bottom: 10px;
+.cause p {
+    line-height: 1.5;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #333;
 }
+
 .cause:hover {
     box-shadow: 0 0 25px rgb(0, 0, 0);
     transition: font-size 0.5s;

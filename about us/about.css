@@ -420,15 +420,6 @@ header nav ul {
 
 }
 
-/* .about-paragraph{
-    padding: 50px 20px;
-    text-align: center;
-    height: auto;
-    background-color: white;
-    overflow: hidden;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-} */
 .about-paragraph p {
     line-height: 1.6;
     margin-bottom: 50px;
@@ -510,6 +501,12 @@ header nav ul {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+@media(max-width:1000px){
+    .image-overlay img{
+        width: 170%;
+        height: 170%;
+    }
 }
 
 .overlay-text {

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation</title>
     <link rel="icon" type="image/png" href="/Aasset/images/favicon/favicon_1.png">
     <link rel="stylesheet" href="styles_donation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <div class="container2">
@@ -31,10 +35,11 @@
                     </li> -->
                 </ul>
                 <div class="icons-and-menu">
-                    <a href="https://www.facebook.com/profile.php?id=61569570429451&sk=about"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61569570429451&sk=about"><i
+                            class="fab fa-facebook"></i></a>
                     <a href="https://x.com/Kinddonor174779"><i class="fab fa-twitter"></i></a>
                     <a href="https://www.instagram.com/kind.donor/"><i class="fab fa-instagram"></i></a>
-                    
+
                 </div>
                 <!-- Hamburger menu for mobile -->
                 <div class="hamburger-menu">
@@ -64,59 +69,47 @@
             });
         });
     </script>
-    
+
 
     <div class="container">
         <!-- Address Section -->
         <h3><u>DONATION DETAILS</u></h3>
-        <form id="address-form">
+        <form id="donation_details">
             <label for="street">Street<span style="color: #f04; font-weight: bold;">*</span></label>
-            <input type="text" id="street" name="street" placeholder="e.g., K.C. Road"required>
-            <span class="warning" id="street-warning">Street cannot be empty!</span>
+            <input type="text" id="street" name="street" placeholder="e.g., K.C. Road" required>
+            
 
             <label for="city">City<span style="color: #f04; font-weight: bold;">*</span></label>
-            <input type="text" id="city" name="city" placeholder="e.g., Guwahati"required>
-            <span class="warning" id="city-warning">City cannot be empty!</span>
+            <input type="text" id="city" name="city" placeholder="e.g., Guwahati" required>
 
-            <label for="state">State<span style="color: #f04; font-weight: bold;">*</span></label>
-            <input type="text" id="state" name="state" placeholder="e.g., Meghalaya"required>
-            <span class="warning" id="state-warning">State cannot be empty!</span>
-
-            <label for="pincode">Pincode<span style="color: #f04; font-weight: bold;">*</span></label>
-            <input type="number" id="pincode" name="pincode" placeholder="e.g., 793001"required>
-            <span class="warning" id="pincode-warning">Pincode cannot be empty!</span>
-
-            <label for="landmark">Landmark<span style="color: #f04; font-weight: bold;">*</span></label>
-            <input type="text" id="landmark" name="landmark" placeholder="e.g., Near City Center"required>
-            <span class="warning" id="landmark-warning">Landmark cannot be empty!</span>
-
-            <label for="Phone_Number">Phone Number<span style="color: #f04; font-weight: bold;">*</span></label>
-            <input type="number" id="Phone_Number" name="Phone_Number" placeholder="e.g., 9362230534"required>
-            <span class="warning" id="Phone_Number-warning">Phone Number cannot be empty!</span>
             
-            <button type="save">Save</button>
-        </form>
-
-        <br>
-        <br>
-        <hr color="black">
-        <br>
+            <label for="state">State<span style="color: #f04; font-weight: bold;">*</span></label>
+            <input type="text" id="state" name="state" placeholder="e.g., Meghalaya" required>
     
 
-    <!-- <div class="container"> -->
-        <!-- Donation Section -->
-        <h2><u>Donate Items</u></h2>
-        <form id="donation-form">
+            <label for="pincode">Pincode<span style="color: #f04; font-weight: bold;">*</span></label>
+            <input type="number" id="pincode" name="pincode" placeholder="e.g., 793001" required>
+        
+
+            <label for="landmark">Landmark<span style="color: #f04; font-weight: bold;">*</span></label>
+            <input type="text" id="landmark" name="landmark" placeholder="e.g., Near City Center" required>
+            
+
+            <label for="Phone_Number">Phone Number<span style="color: #f04; font-weight: bold;">*</span></label>
+            <input type="number" id="Phone_Number" name="Phone_Number" placeholder="e.g., 9362230534" required>
+            
+
+            <!-- Donation Section -->
+            <h2><u>Donate Items</u></h2>
             <div id="donation-items">
                 <!-- Default donation item inputs -->
                 <div class="donation-item">
-                    <input type="text" name="donationType" placeholder="Donation Type (e.g., Clothes)"required>
-                    <input type="number" name="donationCount" placeholder="Number of Items" min="1"required>
-                </div>
-                <br>
+                    <input type="text" name="donationType" placeholder="Donation Type (e.g., Clothes)" required>
+                    <input type="number" name="donationCount" placeholder="Number of Items" min="1" required>
+                </div>                
                 <div class="donation-item">
-                    <input type="text" name="donationType" placeholder="Donation Type (e.g., Food)"required>
-                    <input type="number" name="donationCount" placeholder="Number of Items" min="1"required>
+                    <input type="text" name="donationType" placeholder="Donation Type (e.g., Food)" required>
+                    <input type="number" name="donationCount" placeholder="Number of Items" min="1" required>
                 </div>
             </div>
             <div class="add-more">
@@ -129,6 +122,13 @@
         </div>
     </div>
 
+    <footer>
+        <div class="container_footer">
+            <p>&copy; 2025 Kind<span style="color: #f04; font-weight: bold;">DONOR</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script src="script_donation.js"></script>
 </body>
+
 </html>
